@@ -1,0 +1,19 @@
+<div class="recipe-container">
+  <h1 class="title" data-bind="current_recipe.title"></h1>
+  <h2 class="subtitle" data-bind="current_recipe.subtitle"></h2>
+
+  <div>
+    <img data-bind-src="current_recipe.photo" alt="" class="photo"/>
+  </div>
+
+  <div class="additional-info">
+    <div class="calories">
+      <strong>Calories</strong><br>
+      <span data-bind="current_recipe.calories">735 kcal</span>
+    </div>
+    <div class="cookingtime">
+      <strong>Cooking time</strong><br>
+      <span data-bind="current_recipe.cookingtime">35 min</span>
+    </div>
+  </div>
+</div>

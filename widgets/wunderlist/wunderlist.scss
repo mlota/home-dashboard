@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #ec663c;
+
+$bullet-color:       rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-wunderlist styles
+// ----------------------------------------------------------------------------
+.widget-wunderlist {
+  background-color: $background-color;
+
+  ul {
+    padding-left: 30px;    
+  }
+
+  li {
+    position: relative;
+    /*border-left: 8px solid #fff;*/
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f096';
+      /*margin:0 0 0 -15px;*/
+      color: #fff;
+      position: absolute;
+      left: -25px;
+      top: 6px;
+    }
+  }
+
+  .updated-at{
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

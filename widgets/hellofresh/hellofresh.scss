@@ -1,0 +1,59 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #2ecc71;
+
+$title-color:       #fff; /*rgba(255, 255, 255, 0.7)*/
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+
+// ----------------------------------------------------------------------------
+// Widget-hellofresh styles
+// ----------------------------------------------------------------------------
+.widget-hellofresh {
+  /*background-color: $background-color;*/
+  background: $background-color url(/assets/logo-hf.png) no-repeat 0 100%;
+
+  .title {
+    color: $title-color;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    text-transform: none;
+  }
+  .photo {
+    -webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.52);
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.52);
+    border: 10px solid #fff;
+    border-radius: 5px;
+    height: auto;
+    margin-bottom: 14px;
+    max-width: 230px;
+  }
+  .ingredients {
+    font-size: 12px;
+  }
+  .additional-info {
+  }
+  .calories {
+    background: url(/assets/icon-calories.png) no-repeat 0 4px;
+    float: left;
+    font-size: 14px;
+    padding-left: 35px;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .cookingtime {
+    background: url(/assets/icon-cookingtime.png) no-repeat 0 4px; 
+    float: right;
+    font-size: 14px;
+    margin-right: 12px;
+    padding-left: 35px;
+    text-align: left;
+  }
+}

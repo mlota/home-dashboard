@@ -1,0 +1,65 @@
+<script type='text/javascript'>
+$(function() {
+  // Grid optimised for 1280 x 800 screen
+  Dashing.widget_base_dimensions = [306, 385]
+});
+</script>
+
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li> -->
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="news" data-view="News"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="hellofresh" data-view="Hellofresh" data-title="Hello Fresh"></div>
+    </li>
+
+    <!--<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
+    </li>-->
+
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    </li> -->
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="wunderlist" data-view="Wunderlist" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    </li>
+
+    <!--<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li>-->
+
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="news" data-view="News"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li> -->
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="weatheroutlook" data-view="Weatheroutlook"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+    
+  </ul>
+  <!--<center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>-->
+</div>
